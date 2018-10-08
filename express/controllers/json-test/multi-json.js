@@ -4,7 +4,7 @@ this.testData = function (curUrl) {
         'owner': 'KTJ',
         'company': 'Softwaore Maestro',
         'age': 28,
-        'is-ale': true,
+        'isMale': true,
         'favorite-animal': 'cat'
     };
     return data;
