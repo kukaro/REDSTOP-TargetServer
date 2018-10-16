@@ -4,7 +4,7 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 var cors = require('cors');
-var io = require('socket.io');
+// var io = require('socket.io');
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
@@ -47,13 +47,13 @@ app.use(function(err, req, res, next) {
   res.render('error');
 });
 
-io.on('connection', function (socket) {
-    console.log('connect');
-    var instanceId = socket.id;
-    socket.on('msg', function (data) {
-        console.log(data);
-        // socket.emit('recMsg', {comment: instanceId + ":" + data.comment+'\n'});
-    })
+// io.on('connection', function (socket) {
+//     console.log('connect');
+//     var instanceId = socket.id;
+//     socket.on('msg', function (data) {
+//         console.log(data);
+//         // socket.emit('recMsg', {comment: instanceId + ":" + data.comment+'\n'});
+//     })
 });
 
 module.exports = app;
