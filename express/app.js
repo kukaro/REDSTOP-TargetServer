@@ -54,7 +54,7 @@ app.use(function(err, req, res, next) {
 //         console.log(data);
 //         // socket.emit('recMsg', {comment: instanceId + ":" + data.comment+'\n'});
 //     })
-});
+// });
 
 module.exports = app;
 //testt
